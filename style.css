@@ -1,0 +1,23 @@
+.fresh-recruiter:not(#fakeId) {
+    background-color: #e1f7e4;
+    color: #40b14f;
+}
+.fresh-recruiter:not(#fakeId)::before {
+    background: #3ac249;
+}
+
+.stale-recruiter:not(#fakeId) {
+    background-color: #f5f3e1;
+    color: #b19f40;
+}
+.stale-recruiter:not(#fakeId)::before {
+    background: #c1b44e;
+}
+
+.dead-recruiter:not(#fakeId) {
+    background-color: #e7e7e7;
+    color: #666666;
+}
+.dead-recruiter:not(#fakeId)::before {
+    background-color: #888888;
+}

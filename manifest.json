@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "zhipin recruiter filter browser extension",
+  "version": "1.0",
+  "description": "在BOSS直聘的一些页面添加招聘人员的活跃度信息。",
+  "content_scripts": [
+    {
+      "js": ["main.js"],
+      "css": ["style.css"],
+      "matches": [
+        "https://www.zhipin.com/web/geek/job*"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "js": ["detail-page.js"],
+      "matches": [
+        "https://www.zhipin.com/job_detail/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "favicon.png"
+  }
+}
